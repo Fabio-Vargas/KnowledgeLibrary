@@ -12,7 +12,7 @@ let object = {
 console.log(object.propriedade1 + object.propriedade2)
 
 object.propriedade1 = "Teste" // Acesso direto
-object.["propriedade2"] = "Teste" // Acesso dinâmico
+object.["propriedade1"] = "Teste" // Acesso dinâmico
 
 object.propriedade3()
 
