@@ -18,15 +18,38 @@ class Class {
 // Instancias da Classe
     // Metodo 01
     const classInstance01 = new Class()
-    classInstance01.attribute01 = "Text01"
-    classInstance01.attribute02 = 01
+        classInstance01.attribute01 = "Text01"
+        classInstance01.attribute02 = 01
 
-    classInstance01.functionAction()
+    console.log(classInstance01)
 
 
     // Metodo 02
     const classInstance02 = new Class("Text02", 02)
 
-    classInstance02.functionAction()
+    console.log(classInstance02)
+
+
+// EXAMPLES
+
+class Person {
+    name
+    age
+    birthday
+
+    constructor(name, age) {
+        this.name = name
+        this.age = age
+        this.birthday = 2023 - age
+    }
+
+    DescribePerson() {
+        console.log("The person name is ${this.name}, ${this.age} years old, was born in ${this.birthday}")
+    }
+}
+
+const Fabio = new Person("Fabio", 100)
+
+console.log(Fabio)
 
 
