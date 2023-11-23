@@ -11,7 +11,7 @@ class Class {
 
     
     functionAction() {
-        console.log("Text ${this.attribute01} text ${this.attribute02}")
+        console.log(`First attribute is: ${this.attribute01}, the second attribute is: ${this.attribute02}.`)
     }
 }
 
@@ -19,15 +19,17 @@ class Class {
     // Metodo 01
     const classInstance01 = new Class()
         classInstance01.attribute01 = "Text01"
-        classInstance01.attribute02 = 01
+        classInstance01.attribute02 = 1
 
     console.log(classInstance01)
+    classInstance01.functionAction()
 
 
     // Metodo 02
-    const classInstance02 = new Class("Text02", 02)
+    const classInstance02 = new Class("Text02", 2)
 
     console.log(classInstance02)
+    classInstance02.functionAction()
 
 
 // EXAMPLES
@@ -44,12 +46,13 @@ class Person {
     }
 
     DescribePerson() {
-        console.log("The person name is ${this.name}, ${this.age} years old, was born in ${this.birthday}")
+        console.log(`The person name is ${this.name}, ${this.age} years old, was born in ${this.birthday}.`)
     }
 }
 
 const Fabio = new Person("Fabio", 150)
 
 console.log(Fabio)
+Fabio.DescribePerson()
 
 
