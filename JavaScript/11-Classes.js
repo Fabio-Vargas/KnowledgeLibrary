@@ -48,7 +48,7 @@ class Person {
     }
 }
 
-const Fabio = new Person("Fabio", 100)
+const Fabio = new Person("Fabio", 150)
 
 console.log(Fabio)
 
