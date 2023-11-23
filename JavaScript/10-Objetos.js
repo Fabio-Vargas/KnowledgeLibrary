@@ -12,6 +12,11 @@ let object = {
 console.log(object.propriedade1 + object.propriedade2)
 
 object.propriedade3()
+
+// Mudando a função criada na propriedade3 do object
+object.propriedade3 = function () {
+    console.log("Text ${this.propriedade1}")
+}
   
 
 // EXEMPLOS
